@@ -49,4 +49,8 @@ public class Book extends Section {
     public void setPages(int pages) {
         this.pages = pages;
     }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
 }
