@@ -1,6 +1,6 @@
 package MagazineTests;
 
-import Alexandria.Magazine;
+import alexandria.Magazine;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

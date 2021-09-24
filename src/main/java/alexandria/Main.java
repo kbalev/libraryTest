@@ -1,4 +1,4 @@
-package Alexandria;
+package alexandria;
 
 public class Main {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package Alexandria;
+package alexandria;
 
 public class Magazine {
 

@@ -1,6 +1,6 @@
 package BookTests;
 
-import Alexandria.Book;
+import alexandria.Book;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

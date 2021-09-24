@@ -1,4 +1,4 @@
-package Alexandria;
+package alexandria;
 
 public abstract class Physical extends Inventory {
 
