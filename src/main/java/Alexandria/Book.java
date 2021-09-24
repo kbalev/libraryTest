@@ -1,6 +1,6 @@
 package Alexandria;
 
-public class Book extends Section {
+public class Book extends Physical {
 
     private String title;
     private String author;
@@ -18,10 +18,12 @@ public class Book extends Section {
 
 
    public Book(String title, String author, String content, int pages){
+        super(false);
         this.title = title;
         this.author = author;
         this.content = content;
         this.pages = pages;
+
    }
 
 

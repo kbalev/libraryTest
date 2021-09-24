@@ -20,6 +20,6 @@ public class BookConstructorsTest {
         assertEquals("Epic of Gilgamesh", testBook2.getTitle(), "This ain't it chief");
         assertEquals("Author Unknown", testBook2.getAuthor(), "I shouldn't know who wrote this");
         assertEquals("Many, many lines about the wholesome friendship between Gilgamesh and Enkidu", testBook2.getContent(), "Where's my wholesome story?");
-        assertEquals(1, testBook2.getPages(), "Calculation has gone wrong");
+        assertEquals(1, testBook2.getPages(), "Calculation and/or rounding has gone wrong");
     }
 }
