@@ -6,9 +6,6 @@ public class Book extends Physical {
     private String author;
     private String content;
     private int pages;
-    //this is a  comment
-
-
 
     public Book(String title){
         this(title, "Author Unknown", "Content to be added.", 0);
@@ -27,8 +24,6 @@ public class Book extends Physical {
         this.pages = pages;
 
    }
-
-
 
     public String getTitle() { return title; }
 
