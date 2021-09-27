@@ -25,5 +25,13 @@ public class GameMethodTest {
         assertEquals(25, testGame3.getAgeRating(), "Wrong age rating");
     }
     @Test
-    public void gameOtherPlayers(){}
+    public void gameOtherPlayers(){
+        Game testGame4 = new Game("Generic Multiplayer");
+        assertEquals("There does not seem to be anyone around to play with", testGame4.otherPlayers(), "Wrong message when asking for other players");
+    }
+    @Test
+    public void deviceRequiredTest(){
+        Game testGame5 = new Game("Star Citizen");
+        assertEquals("I require a computer to be viewed", testGame5.requiredDevice(), "Doesn't know it requires a device");
+    }
 }
