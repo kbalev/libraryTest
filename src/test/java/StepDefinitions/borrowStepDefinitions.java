@@ -27,12 +27,17 @@ public class borrowStepDefinitions {
         testBook.setBorrowed(true);
     }
 
-    @When("the patron borrows the book")
-    public void thePatronBorrowsTheBook() {
-//        testBook.borrow();
+    @When("the patron returns the book")
+    public void thePatronReturnsTheBook() {
+        testBook.bringBack();
     }
 
-    @Then("patron should be told {string}")
+    @When("the patron borrows the book")
+    public void thePatronBorrowsTheBook() {
+        testBook.request();
+    }
+
+    @Then("when patron tries borrowing they should be told {string}")
     public void patronShouldBeTold(String expectedAnswer) {
         assertEquals(expectedAnswer, testBook.borrow());
     }

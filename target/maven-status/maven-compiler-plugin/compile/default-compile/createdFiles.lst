@@ -1,8 +1,8 @@
-Alexandria\Movie.class
-Alexandria\Digital.class
-Alexandria\Main.class
-Alexandria\Game.class
-Alexandria\Book.class
-Alexandria\Physical.class
-Alexandria\Magazine.class
-Alexandria\Inventory.class
+alexandria\Digital.class
+alexandria\Inventory.class
+alexandria\Magazine.class
+alexandria\Main.class
+alexandria\Book.class
+alexandria\Game.class
+alexandria\Movie.class
+alexandria\Physical.class

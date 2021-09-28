@@ -1,3 +1,9 @@
+GameTests\GameMethodTest.class
+InventoryTests\BorrowingTest.class
+MovieTests\MovieSetGetTest.class
 BookTests\BookConstructorsTest.class
+MagazineTests\MagazineSetGetTest.class
+DigitalTests\DigitalConstructTest.class
 BookTests\BookGetTest.class
 BookTests\BookSetTest.class
+StepDefinitions\borrowStepDefinitions.class

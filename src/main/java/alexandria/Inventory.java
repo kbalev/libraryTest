@@ -12,7 +12,7 @@ public abstract class Inventory {
 
     private boolean borrowed;
 
-    public Inventory(boolean borrowed){
+    protected Inventory(boolean borrowed){
         this.borrowed = borrowed;
     }
 

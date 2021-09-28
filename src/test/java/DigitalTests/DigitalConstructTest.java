@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DigitalConstructTest {
+class DigitalConstructTest {
     @Test
-    public void construcTestDigi(){
+    void construcTestDigi(){
         Digital testDigi = new Movie("Kingdom of Heaven", "Historical Drama", 2005);
         assertEquals("I require a computer to be viewed", testDigi.requiredDevice(), "Doesn't know it is a digital medium.");
     }

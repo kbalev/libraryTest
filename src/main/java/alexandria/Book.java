@@ -12,7 +12,7 @@ public class Book extends Physical {
     }
 
     public Book(String title, String content){
-        this(title, "Author Unknown", content, (int) Math.ceil(content.length()/3000));
+        this(title, "Author Unknown", content, (int) content.length()/3000);
     }
 
 

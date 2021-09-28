@@ -5,13 +5,11 @@ public class Magazine {
     private String title;
     private int issue;
     private int pages;
-    private boolean borrowed;
 
     public Magazine(String title, int issue, int pages){
         this.title = title;
         this.issue = issue;
         this.pages = pages;
-        this.borrowed = false;
     }
 
     public String getTitle() {

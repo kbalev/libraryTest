@@ -3,10 +3,10 @@ package alexandria;
 public abstract class Digital extends Inventory {
 
 
-    public Digital(){
+    protected Digital(){
         super(false);
     }
-    public Digital(boolean borrowed){
+    protected Digital(boolean borrowed){
         super(borrowed);
     }
 

@@ -3,10 +3,10 @@ package alexandria;
 public abstract class Physical extends Inventory {
 
 
-    public Physical(){
+    protected Physical(){
         super(false);
     }
-    public Physical(boolean borrowed){
+    protected Physical(boolean borrowed){
         super(borrowed);
     }
 
