@@ -2,6 +2,14 @@ package alexandria;
 
 public abstract class Inventory {
 
+    public boolean isBorrowed() {
+        return borrowed;
+    }
+
+    public void setBorrowed(boolean borrowed) {
+        this.borrowed = borrowed;
+    }
+
     private boolean borrowed;
 
     public Inventory(boolean borrowed){
@@ -19,7 +27,7 @@ public abstract class Inventory {
 
     public String borrow(){
         if (!borrowed){
-            this.borrowed = !borrowed;
+            this.borrowed = true;
             return "You have borrowed this item.";
         }
         else {
@@ -29,7 +37,7 @@ public abstract class Inventory {
 
     public String bringBack(){
         if (borrowed){
-            this.borrowed = !borrowed;
+            this.borrowed = false;
             return "Thank you for bringing back the item.";
         } else {
             return "You cannot return an item that has not been borrowed.";

@@ -1,3 +1,5 @@
+package StepDefinitions;
+
 import alexandria.Book;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -10,19 +12,24 @@ public class borrowStepDefinitions {
 
     public Book testBook = new Book("Count of Monte Cristo");
 
-    @Given("book exists and that")
+    @Given("the book exists")
     public void bookExistsAndThat() {
-        testBook.getTitle();
+        testBook.request();
     }
 
-    @And("book is not borrowed")
+    @And("book is available")
     public void bookIsNotBorrowed() {
-        testBook.bringBack();
+        testBook.setBorrowed(false);
+    }
+
+    @And("book is borrowed")
+    public void bookIsBorrowed() {
+        testBook.setBorrowed(true);
     }
 
     @When("the patron borrows the book")
     public void thePatronBorrowsTheBook() {
-        testBook.borrow();
+//        testBook.borrow();
     }
 
     @Then("patron should be told {string}")
@@ -30,8 +37,4 @@ public class borrowStepDefinitions {
         assertEquals(expectedAnswer, testBook.borrow());
     }
 
-    @And("book is borrowed")
-    public void bookIsBorrowed() {
-        testBook.borrow();
-    }
 }

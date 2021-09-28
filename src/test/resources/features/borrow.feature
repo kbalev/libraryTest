@@ -1,11 +1,12 @@
 Feature: borrow a book in a best-case scenario
   Scenario: Check borrowing is successful
-    Given book exists and that
-    And  book is not borrowed
+    Given the book exists
+    And  book is available
     When the patron borrows the book
-    Then patron should be told "thank you for using the library"
+    Then patron should be told "You have borrowed this item."
+
   Scenario: Check borrowing can't be done on a borrowed book
-      Given book exists and that
+      Given the book exists
       And  book is borrowed
       When the patron borrows the book
-      Then patron should be told "book is not available at this time"
+      Then patron should be told "The item you are trying to borrow is not available at this time."
