@@ -10,7 +10,8 @@ Feature: borrow a book in a best-case scenario
       And  book is borrowed
       When the patron borrows the book
       Then when patron tries borrowing they should be told "The item you are trying to borrow is not available at this time."
-    Scenario: Checking returning the book brings it to a state that can be borrowed again
+
+  Scenario: Checking returning the book brings it to a state that can be borrowed again
       Given the book exists
       And book is borrowed
       When the patron returns the book
