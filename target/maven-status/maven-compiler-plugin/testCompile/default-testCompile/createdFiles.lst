@@ -4,6 +4,7 @@ MovieTests\MovieSetGetTest.class
 BookTests\BookConstructorsTest.class
 MagazineTests\MagazineSetGetTest.class
 DigitalTests\DigitalConstructTest.class
+runner\RunnerTest.class
 BookTests\BookGetTest.class
 BookTests\BookSetTest.class
 StepDefinitions\borrowStepDefinitions.class
